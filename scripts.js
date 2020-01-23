@@ -81,12 +81,16 @@ document.addEventListener('DOMContentLoaded', function () {
         h6.style.color = randomColor;
     });
 
-    //create a button to add new list item
-    let button = document.createElement('button');
-    let btnTxt = document.createTextNode('Click to add new list item');
-    button.appendChild(btnTxt);
-    div.appendChild(button);
-    button.className = 'button';
+    //create a button to add new list item if button is created in javascript
+    // let button = document.createElement('button');
+    // let btnTxt = document.createTextNode('Click to add new list item');
+    // button.appendChild(btnTxt);
+    // div.appendChild(button);
+    // button.className = 'button';
+
+    //button setting if it is in html and needs to be linked to javascript
+    let button = document.querySelector('.button');
+    
 
     //create list element
     let ul = document.createElement('ul');
